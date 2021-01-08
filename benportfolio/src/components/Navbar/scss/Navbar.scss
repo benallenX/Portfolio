@@ -1,0 +1,26 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+
+    ul{
+        display: flex;
+    }
+
+    li{
+        padding: 1rem 1.5rem;
+    }
+
+    button {
+        text-decoration: none;
+        color: whitesmoke;
+        text-transform: uppercase;
+        border-bottom: 3px transparent solid;
+        padding-bottom: 0.5rem;
+        transition: 0.5s;
+
+        &:hover {
+            border-color: blue;
+        }
+    }
+}

@@ -4,8 +4,16 @@ import './scss/Navbar.css'
 
 const Navbar = () => {
     return (
-        <div>
-            Navbar Section
+        <div className='navbar'>
+         {/* <img src="" alt="logo"/> */}
+            <ul>
+            <li className='home'>Home</li>
+            <li>About Me</li>
+            <li>Projects</li>
+            <li>Skills</li>
+            <li>Tools</li>
+            </ul>
+            
         </div>
     )
 }

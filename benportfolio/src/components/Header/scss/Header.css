@@ -1,1 +1,15 @@
-/* No CSS *//*# sourceMappingURL=Header.css.map */
+.header__home {
+  background-image: url();
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  color: black;
+}
+
+.header__home .container {
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
+}
+/*# sourceMappingURL=Header.css.map */
