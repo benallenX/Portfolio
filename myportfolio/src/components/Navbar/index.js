@@ -1,16 +1,16 @@
 import React from 'react'
 import{Nav,NavbarContainer,NavLogo,MobileIcon,NavItems,NavMenu,NavLinks} from './NavElements.js'
 import {FaBars} from 'react-icons/fa'
-import *  as Scroll from 'react-scroll'
 
 
-const Navbar = () => {
+
+const Navbar = ({toggle}) => {
     return (
         <>
            <Nav>
                <NavbarContainer>
                    <NavLogo to='/'>BA</NavLogo>
-                   <MobileIcon>
+                   <MobileIcon onClick={toggle}>
                     <FaBars />
                    </MobileIcon>
                    <NavMenu>

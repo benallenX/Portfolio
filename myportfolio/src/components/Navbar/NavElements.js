@@ -18,7 +18,7 @@ export const Nav = styled(motion.nav) `
   @media screen and(max-width:960px){
       transition: 0.8s all ease;
   }
-  `
+  `;
 
   export const NavbarContainer = styled.div`
   display:flex;
@@ -37,15 +37,16 @@ export const Nav = styled(motion.nav) `
     font-size:1.5rem;
     display:flex;
     align-items:center;
-    margin-left:24px;
+    margin-left:-100px;
     font-weight:bold;
-    text-decoration:none
+    text-decoration:none;
   `
-
-  export const MobileIcon = styled.div `
+  
+  export const MobileIcon = styled.div ` 
    display:none;
 
    @media screen and (max-width: 768px) {
+     color:#fff;
      display:block;
      position:absolute;
      top:0;
@@ -53,36 +54,35 @@ export const Nav = styled(motion.nav) `
      transform: translate(-100%, 60%);
      font-size:1.8rem;
      cursor: pointer;
-     color:#fff;
    }
   `
-  export const NavMenu = styled.ul `
+
+  export const NavMenu = styled.ul`  
    display:flex;
    align-items:center;
-   list-style:none;
+   list-style:none; 
    text-align:center;
-   justify-content:space-between;
+   margin-right: 300px;
 
-   @media screen and (max-width: 768px){
-     display:none;
+   @media screen and (max-width:768px) {
+     display:none
    }
   `
 
-  export const NavItems = styled.li `
-   height:80px;
-   justify-content:space-evenly;
+  export const NavItems = styled.li `  
+  height: 80px; 
   `
 
   export const NavLinks = styled(LinkS) ` 
-  color:#fff;
-  display:flex;
-  align-items:center;
-  text-decoration:none;
-  padding:0 1rm;
-  height:100%;
-  cursor:pointer;
-  
-  &.active {
-    border-bottom: 3px solid #01bf71;
-  }
+   color: #fff;
+   display:flex;
+   align-items:center;
+   text-decoration:none;
+   padding: 0 1rem;
+   height: 100%;
+   cursor: pointer;
+   
+   &.active {
+     border-bottom: 3px solid #0066ff; 
+   }
   `
